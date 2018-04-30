@@ -1,0 +1,89 @@
+
+@import "icons/lightIcons.css";
+@import "folderTree.css";
+@import "mailToolbox.css";
+@import "tabMail.css";
+
+:root {
+  --background-color-0: #3f3e39;
+  --background-color-1: #353535;
+  --background-color-2: #575757;
+  --font-color-highlight: #FF5252;
+  --color-blue: #03A9F4;
+  --active-tab-color: #ffffff;
+  --inactive-tab-color: #a7adba;
+  --replied-color: #eff1f5;
+  --read-color: #a7adba;
+  --unread-color: #a3be8c;
+  --tab-height: 32px;
+  --scrollbar-thumb-color: Highlight;
+  --scrollbar-thumb-hover-color: Hightlight;
+  --slider-width: 7px;
+  --thread-height: auto;
+  --thread-margin: 0px;
+  --thread-shadow: 0px;
+}
+
+* {
+  font-family: Arial !important;
+  /* For 'Segoe UI' or Tahoma change the font-size to 11pt */
+  font-size: 11pt;
+  font-weight: normal !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+small {
+  font-size: 95% !important;
+}
+
+a, a:link, a:hover, a:active, a:focus, a:visited {
+  outline: 0 !important;
+}
+
+* {
+  background-image: none !important;
+}
+
+* {
+  box-shadow: none !important;
+}
+
+
+#throbber-box {
+  display: none !important;
+}
+
+scrollbar {
+  margin-left: 5px !important;
+  width: var(--slider-width) !important;
+  max-width: var(--slider-width) !important;
+  -moz-appearance: none !important;
+  background: none !important;
+}
+
+srollbarbutton {
+  width: var(--slider-width) !important;
+  max-width: var(--slider-width) !important;
+}
+
+slider {
+  width: var(--slider-width) !important;
+  max-width: var(--slider-width) !important;
+  -moz-appearance: none !important;
+  background: none !important;
+  border: none !important;
+}
+
+thumb {
+  width: var(--slider-width) !important;
+  max-width: var(--slider-width) !important;
+  -moz-appearance: none !important;
+  min-height: 100px !important;
+  border: 1px solid Highlight;
+  border-radius: 5px;
+  background: var(--scrollbar-thumb-color) !important;
+}
+
+thumb:hover {
+  background: var(--scrollbar-thumb-hover-color) !important;
+}

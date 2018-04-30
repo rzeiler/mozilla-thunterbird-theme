@@ -1,0 +1,104 @@
+
+
+#threadTree
+{
+  background-color: var(--background-color-0) !important;
+  border: none !important;
+
+}
+
+/* Set Font Size In Thread Pane */
+#threadTree >treechildren::-moz-tree-cell-text
+{
+  color: #aaa !important;
+}
+
+#threadTree treecol, #threadTree .treecol-image {
+  -moz-appearance: none !important;
+  background-color: var(--background-color-0) !important;
+  color: #eee !important;
+  border: none !important;
+  padding: 3px !important;
+  padding-left: 13px !important;
+}
+
+
+#threadTree treechildren::-moz-tree-row
+{
+  -moz-appearance: none !important;
+  background-image: none !important;
+  /*margin: var(--thread-margin) 0 var(--thread-margin) 0 !important;*/
+  background-color: var(--background-color-0);
+  border-bottom: var(--thread-shadow) solid var(--background-color-0) !important;
+  height: 60px !important;*/
+  padding: 8px !important;
+}
+
+#threadTree treechildren::-moz-tree-row(odd)
+{
+  -moz-appearance: none !important;
+  background-image: none !important;
+  margin: var(--thread-margin) 0 var(--thread-margin) 0 !important;
+  border-bottom: var(--thread-shadow) solid var(--background-color-0) !important;
+}
+
+#threadTree treechildren::-moz-tree-row(selected)
+{
+  border-bottom: var(--thread-shadow) solid -moz-Dialog !important;
+	/*background-color: Highlight !important;*/
+        /*background-color: -moz-Dialog !important;*/;
+
+        background-color: transparent !important;
+        -moz-appearance: none !important;
+        background-image: none !important;
+
+}
+
+#threadTree treechildren::-moz-tree-row(selected, focus)
+{
+  border: none;
+  border-bottom: var(--thread-shadow) solid var(--background-color-0) !important;
+	background-color: transparent !important;
+  -moz-appearance: none !important;
+  background-image: none !important;
+}
+
+#threadTree treechildren::-moz-tree-cell-text(selected)
+{
+  color: #ffffff !important;
+}
+
+#threadTree treechildren::-moz-tree-cell-text(selected, focus)
+{
+  color: var(--font-color-highlight) !important;
+}
+
+/* Set no-label (default) bottom border */
+/*#threadTree treechildren::-moz-tree-cell {
+  border-bottom: 0px solid #2b303b !important;
+}*/
+
+#threadTree treechildren::-moz-tree-cell(read)
+{
+  -moz-appearance: none !important;
+  /*background-color: #2b303b;*/;
+}
+
+#threadTree treechildren::-moz-tree-cell-text(read)
+{
+  color: var(--read-color);
+}
+
+/* UNREAD messages */
+/* Unread messages : Cell */
+#threadTree treechildren::-moz-tree-cell(unread)
+{
+  -moz-appearance: none !important;
+}
+/* Unread messages : Text */
+#threadTree treechildren::-moz-tree-cell-text(unread)
+{
+  -moz-appearance: none !important;
+  font-weight: normal !important;
+  color: var(--unread-color);
+}

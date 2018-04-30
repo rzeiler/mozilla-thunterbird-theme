@@ -1,0 +1,101 @@
+/* ============================================================================ */
+
+/* Foldertree Basic (on the left) */
+
+/* Remove white lines in the foldertree. Don't know why they appear sometimes. */
+
+treechildren:not(.autocomplete-treebody)::-moz-tree-row {
+  outline-color: transparent !important;
+}
+
+/* ============================================================================ */
+
+/* Foldertree: Accounts + Folders (on the left) */
+
+treerows {
+  padding: 10px;
+}
+
+#folderTree {
+  background-image: none !important;
+  background-color: var(--background-color-0) !important;
+  border: none;
+  color: #aaa !important;
+}
+
+/* Set Font Size In Folder Pane */
+
+#folderTree treechildren::-moz-tree-cell-text {
+  font-size: 100% !important;
+}
+
+/* folder list spacing */
+
+#folderTree treechildren::-moz-tree-row {
+  height: 32px !important;
+  background-color: var(--background-color-0) !important;
+}
+
+#folderTree treechildren::-moz-tree-row(odd) {
+  background-color: var(--background-color-0) !important;
+}
+
+/* Style ACCOUNT name with no new mail */
+
+#folderTree>treechildren::-moz-tree-cell-text(isServer-true) {
+  font-weight: normal !important;
+}
+
+/* Style ACCOUNT name with new mail */
+
+#folderTree>treechildren::-moz-tree-cell-text(isServer-true, biffState-NewMail) {
+  color: #aaaaaa !important;
+  font-weight: normal !important;
+}
+
+/* Style FOLDER with unread messages */
+
+#folderTree>treechildren::-moz-tree-cell-text(hasUnreadMessages-true) {
+  color: #83a4f0 !important;
+  font-weight: normal !important;
+}
+
+/* Style CLOSED FOLDER CONTAINING SUBFOLDERS with unread messages */
+
+#folderTree>treechildren::-moz-tree-cell-text(closed, subfoldersHaveUnreadMessages-true) {
+  color: #83a4f0 !important;
+  font-weight: normal !important;
+}
+
+#folderTree treecol, #folderTree .treecol-image {
+  -moz-appearance: none !important;
+  background-color: var(--background-color-0) !important;
+  color: #eee !important;
+  border: none !important;
+  padding: 3px !important;
+  padding-left: 13px !important;
+}
+
+#folderTree treechildren::-moz-tree-row(selected) {
+  -moz-appearance: none !important;
+  background-image: none !important;
+}
+
+#folderTree treechildren::-moz-tree-row(selected, focus) {
+  -moz-appearance: none !important;
+  background-image: none !important;
+  /*background-color: Highlight !important;*/
+  border: none !important;
+}
+
+#folderTree treechildren::-moz-tree-cell-text {
+  padding-left: 15px;
+}
+
+#folderTree treechildren::-moz-tree-cell-text(selected) {
+  color: var(--font-color-highlight) !important;
+}
+
+#folderTree treechildren::-moz-tree-cell-text(selected, focus) {
+  color: var(--font-color-highlight) !important;
+}

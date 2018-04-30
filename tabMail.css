@@ -1,0 +1,95 @@
+:root {
+  --tabmail-background-color-0: #eeeeee;
+  --active-tabmail-background-color-0: #FF5252;
+  --active-tabmail-color: #FFFFFF;
+  --inactive-tabmail-color: #888;
+  --inactive-hover-tabmail-color: #444;
+}
+
+.tabmail-arrowscrollbox {
+  margin: 0px;
+}
+
+.tabmail-tabs {
+  margin-top: 0px !important;
+  margin-left: -0px !important;
+  margin-right: -1px !important;
+  margin-bottom: 0px !important;
+  background-color: var(--tabmail-background-color-0) !important;
+}
+
+.tab-background-start, .tab-background-end {
+  display: none;
+}
+
+.tab-icon-image {
+  visibility: hidden !important;
+}
+
+.tab-background {
+  margin: 0;
+}
+
+.tabmail-tab:before {
+  display: none !important;
+}
+
+.tab-background-middle {
+  background: transparent !important;
+  margin: 0 !important;
+}
+
+.tabmail-tab {
+  height: var(--tab-height);
+}
+
+.tabmail-tab[selected="true"] .tab-background {
+  background-color: var(--active-tabmail-background-color-0);
+  border: none;
+  /* Remove doubble-borders between tabs */
+  margin-left: -1px !important;
+  margin-right: -1px !important;
+}
+
+.tabmail-tab[selected]:not(:-moz-lwtheme)>.tab-stack>.tab-content>.tab-text {
+  color: var(--active-tabmail-color) !important;
+  border-bottom: 3px solid var(--active-tabmail-background-color-0);
+}
+
+.tabmail-tab:hover:not([selected]) .tab-text {
+  color: var(--inactive-hover-tabmail-color) !important;
+}
+
+.tabmail-tab:hover:not([selected]) .tab-background {
+  border: none;
+  border-bottom: 3px solid var(--active-tabmail-background-color-0);
+  color: var(--inactive-hover-tabmail-color) !important;
+}
+
+.tabmail-tab:not([selected]) .tab-text {
+  color: var(--inactive-tabmail-color) !important;
+}
+
+.tabmail-tab .tab-close-button {
+  visibility: hidden !important;
+}
+
+.tabmail-tab:not([selected]):hover .tab-close-button {
+  visibility: visible !important;
+}
+
+.tab-close-button {
+  border: 0px solid transparent !important;
+  border-radius: 0px !important;
+  list-style-image: url("icons/toolbox/close.svg") !important;
+  -moz-image-region: rect(0px, 18px, 18px, 0px) !important;
+}
+
+.tab-close-button:hover, .tab-close-button:active, .tab-close-button:focus {
+  background-color: transparent !important;
+  border: 0px solid transparent !important;
+}
+
+#tabmail-container {
+  border-top: 1px solid var(--tabmail-background-color-0);
+}

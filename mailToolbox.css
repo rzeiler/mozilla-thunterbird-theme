@@ -1,0 +1,41 @@
+:root {
+  --toolbox-background-color-0: #eeeeee;
+}
+
+#mail-toolbox {
+  -moz-appearance: none;
+  background-color: var(--toolbox-background-color-0) !important;
+  border: 0px solid transparent !important;
+}
+
+#cota-searchbutton {
+  height: auto !important;
+}
+
+#button-getmsg {
+    list-style-image: url("icons/toolbox/getmsg_light.svg") !important;
+}
+
+#button-newmsg {
+    list-style-image: url("icons/toolbox/newmsg_light.svg") !important;
+}
+
+#button-tag{
+  list-style-image: url("icons/toolbox/tag_light.svg") !important;
+}
+
+#button-chat {
+    list-style-image: url("icons/toolbox/chat_light.svg") !important;
+}
+
+#button-address {
+    list-style-image: url("icons/toolbox/address_light.svg") !important;
+}
+
+#qfb-show-filter-bar{
+  list-style-image: url("icons/toolbox/filter_light.svg") !important;
+}
+
+#button-appmenu{
+  list-style-image: url("icons/toolbox/appmenu_light.svg") !important;
+}
