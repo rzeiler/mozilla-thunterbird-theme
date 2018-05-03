@@ -91,11 +91,13 @@ thumb:hover {
   border: 0px solid transparent !important;
 }
 
-#status-bar .statusbar-resizerpanel {
-  -moz-appearance: none;
-  background-color: var(--toolbox-background-color-0) !important;
-  border: 0px solid transparent !important;
-  list-style-image: url("icons/toolbox/getmsg_light.svg") !important;
+resizer {
+  -moz-appearance: none !important;
+  background-image: url("icons/resize.svg") !important;
+  cursor: se-resize !important;
+  width: 24px !important;
+  height: 20px !important;
+  list-style-image: url("icons/online.svg") !important;
 }
 
 #offline-status {
