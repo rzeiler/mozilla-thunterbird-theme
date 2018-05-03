@@ -12,7 +12,7 @@ treechildren:not(.autocomplete-treebody)::-moz-tree-row {
 
 /* Foldertree: Accounts + Folders (on the left) */
 
-treerows {
+#folderTree treerows {
   padding: 10px;
 }
 

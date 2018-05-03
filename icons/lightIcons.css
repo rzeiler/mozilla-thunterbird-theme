@@ -20,11 +20,7 @@ treechildren:-moz-tree-twisty(open) { list-style-image: url("folder-pane/twisty-
 	padding-right: 5px !important;
 }
 
-#threadTree treechildren {
-	margin-left: 5px !important;
-	margin-right: 5px !important;
-}
-
+ 
 /* ..... thread column ..... */
 treechildren::-moz-tree-image(threadCol) { list-style-image: url("message-list/thread-light.svg") !important; }
 

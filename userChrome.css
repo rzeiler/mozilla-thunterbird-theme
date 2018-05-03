@@ -1,9 +1,7 @@
-
 @import "icons/lightIcons.css";
 @import "folderTree.css";
 @import "mailToolbox.css";
 @import "tabMail.css";
-
 :root {
   --background-color-0: #3f3e39;
   --background-color-1: #353535;
@@ -48,7 +46,6 @@ a, a:link, a:hover, a:active, a:focus, a:visited {
   box-shadow: none !important;
 }
 
-
 #throbber-box {
   display: none !important;
 }
@@ -86,4 +83,25 @@ thumb {
 
 thumb:hover {
   background: var(--scrollbar-thumb-hover-color) !important;
+}
+
+#status-bar {
+  -moz-appearance: none;
+  background-color: var(--toolbox-background-color-0) !important;
+  border: 0px solid transparent !important;
+}
+
+#status-bar .statusbar-resizerpanel {
+  -moz-appearance: none;
+  background-color: var(--toolbox-background-color-0) !important;
+  border: 0px solid transparent !important;
+  list-style-image: url("icons/toolbox/getmsg_light.svg") !important;
+}
+
+#offline-status {
+  list-style-image: url("icons/online.svg") !important;
+}
+
+#offline-status[offline="true"] {
+  list-style-image: url("icons/offline.svg") !important;
 }
