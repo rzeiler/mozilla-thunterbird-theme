@@ -1,4 +1,4 @@
-/* ..... twisty ..... */
+/* ..... twisty .....*/
 treechildren:-moz-tree-twisty { list-style-image: url("folder-pane/twisty-light.svg") !important; padding: 10px !important;}
 treechildren:-moz-tree-twisty(open) { list-style-image: url("folder-pane/twisty-expanded-light.svg") !important; padding: 10px !important;}
 
@@ -12,7 +12,7 @@ treechildren:-moz-tree-twisty(open) { list-style-image: url("folder-pane/twisty-
 #threadTree treechildren::-moz-tree-image {
 	width: 16px !important;
 	height: 16px !important;
-		-moz-image-region: rect( 24px 24px 24px  24px) !important;
+	/*	-moz-image-region: rect( 24px 24px 24px  24px) !important;*/
 }
 
 #threadCols {
@@ -20,26 +20,26 @@ treechildren:-moz-tree-twisty(open) { list-style-image: url("folder-pane/twisty-
 	padding-right: 5px !important;
 }
 
- 
-/* ..... thread column ..... */
+
+/* ..... thread column .....*/
 treechildren::-moz-tree-image(threadCol) { list-style-image: url("message-list/thread-light.svg") !important; }
 
-/* ..... read column ..... */
+/* ..... read column .....*/
 .readColumnHeader { list-style-image: url("message-list/read-header-light.svg") !important; }
 treechildren::-moz-tree-image(unreadButtonColHeader) { list-style-image: url("message-list/dot-unread.svg") !important; }
 treechildren::-moz-tree-image(unreadButtonColHeader, unread) { list-style-image: url("message-list/dot-read.svg") !important; }
 /* Unread and read are reversed for dark themes */
 
-/* ..... attachment column ..... */
+/* ..... attachment column .....*/
 .attachmentColumnHeader { list-style-image: url("message-list/paperclip-header-light.svg") !important; }
 treechildren::-moz-tree-image(attachmentCol, attach) { list-style-image: url("message-list/paperclip.svg") !important; }
 
-/* ..... flag/star column ..... */
+/* ..... flag/star column .....*/
 .flagColumnHeader { list-style-image: url("message-list/star-header-light.svg") !important; }
 treechildren::-moz-tree-image(flaggedCol) { list-style-image: url("message-list/star-empty.svg") !important; }
 treechildren::-moz-tree-image(flaggedCol, flagged) { list-style-image: url("message-list/star-filled.svg") !important; }
 
-/* ..... junkStatus column ..... */
+/* ..... junkStatus column .....*/
 .junkStatusHeader { list-style-image: url("message-list/flame-junk-header-light.svg") !important; }
 treechildren::-moz-tree-image(junkStatusCol) { list-style-image: url("message-list/flame-empty.svg") !important; }
 treechildren::-moz-tree-image(junkStatusCol, junk) { list-style-image: url("message-list/flame-junk.svg") !important; }
@@ -61,27 +61,27 @@ treechildren::-moz-tree-image(subjectCol, new) { list-style-image: url("message-
 
 
 
-/* ::::: Folder icons for menus   ::::: */
+/* ::::: Folder icons for menus   :::::*/
 
-/* Folders */
+/* Folders+*/
 treechildren::-moz-tree-image(folderNameCol) { list-style-image: url("folder-pane/folder.svg") !important; }
 
-/* Newsgroup */
+/* Newsgroup*/
 treechildren::-moz-tree-image(folderNameCol, serverType-nntp) { list-style-image: url("folder-pane/news-light.svg") !important; }
 
-/* Feed */
+/* Feed*/
 treechildren::-moz-tree-image(folderNameCol, isFeedFolder-true) { list-style-image: url("folder-pane/rss.svg") !important; }
 
 #folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) { list-style-image: url("folder-pane/inbox-light.svg") !important; }
 
-/*
+/**/
 #folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, subfoldersHaveUnreadMessages-true) { list-style-image: url("folder-pane/inbox-unread-light.svg") !important; }
 #folderTree > treechildren::-moz-tree-cell-text(closed, subfoldersHaveUnreadMessages-true)
 {
   color: #83a4f0 !important;
   font-weight: normal !important;
 }
-*/
+
 
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent) { list-style-image: url("folder-pane/sent.svg") !important; }
 
@@ -99,14 +99,14 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Archive) { list-style
 
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Virtual) { list-style-image: url("folder-pane/folder-search.svg") !important; }
 
-/** IMAP/POP/movemail account nodes */
+/** IMAP/POP/movemail account nodes*/
 treechildren::-moz-tree-image(folderNameCol, isServer-true) { list-style-image: url("folder-pane/email-account-light.svg") !important; }
 
-/* Local folders account node */
+/* Local folders account node*/
 treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-none) { list-style-image: url("folder-pane/local-account-light.svg") !important; }
 
-/* News server */
+/* News server*/
 treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-nntp) { list-style-image: url("folder-pane/news-light.svg") !important; }
 
-/* Feed account node */
+/* Feed account node*/
 treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-rss) { list-style-image: url("folder-pane/news-light.svg") !important; }

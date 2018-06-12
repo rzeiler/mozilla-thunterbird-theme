@@ -71,7 +71,7 @@
 }
 
 .tabmail-tab .tab-close-button {
-  visibility: hidden !important;
+  visibility: visible !important;
 }
 
 .tabmail-tab:not([selected]):hover .tab-close-button {
